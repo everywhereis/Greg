@@ -10,7 +10,7 @@ For example you could make a 12 column grid with 2% gutters using the following 
 ```
 .myClass {
     width:100%;
-    @include greg(12,2%);
+    @include greg(10,2%);
 }
 ```
 
@@ -46,4 +46,16 @@ And the HTML could go a little something along these lines
     <li class="col col_3"></li>
     <li class="col col_7"></li>
 </ul>
+<ul class="myClass">
+    <li class="col col_10"></li>
+</ul>
+<ul class="myClass">
+    <li class="col col_2"></li>
+    <li class="col col_2"></li>
+    <li class="col col_2"></li>
+    <li class="col col_2"></li>
+    <li class="col col_2"></li>
+</ul>
 ```
+
+Check out http://making.everywhere.is/greg/ to see this in action.
