@@ -1,12 +1,10 @@
-Greg
+Greg (Great responsive easy grids)
 ====
-## (G)reat (r)esponsive (e)asy (g)rids.
-
 This is a boilerplate responsive grid and we encourage you to extend it as necessary.
 
-Greg will take the number of columns you need and the gutter spacing you require and create a fluid grid based on those parameters.
+Greg will take the number of columns you need and the gutter spacing you require to create a fluid grid based on those parameters.
 
-For example you could make a 12 column grid with 2% gutters using the following code;
+For example you could make a 10 column grid with 2% width gutters using the following code;
 ```
 .myClass {
     width:100%;
@@ -28,7 +26,7 @@ This will generate the following CSS
 .col_1 { width:8.2%; margin-left:2%; float:left; }
 ```
 
-And the HTML could go a little something along these lines
+And the HTML could go a little something like this;
 ```
 <ul class="myClass">
     <li class="col col_1"></li>
