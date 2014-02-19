@@ -1,0 +1,19 @@
+@mixin greg($cols,$gutter) {    
+    $i: $cols; // Total # of cols
+    $gutters: $cols - 1; // # gutters
+    $gutterWidth: $gutters * $gutter;
+    $gridWidth: 100% - $gutterWidth;
+    $colWidth: $gridWidth / $cols;
+    $width: 100%;
+    @while $cols > 0 {
+        .col_#{$cols} {
+            width: $width;
+            float:left;
+            display:block;
+            margin-left:$gutter;
+        }
+        .col_#{$cols}:first-child { margin-left:0; }
+        $cols: $cols - 1;
+        $width: $width - ($colWidth + $gutter);
+    }
+}

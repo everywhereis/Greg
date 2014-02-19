@@ -1,4 +1,6 @@
 Greg
 ====
 
-Great responsive easy grids
+(G)reat (r)esponsive (e)asy (g)rids.
+
+
