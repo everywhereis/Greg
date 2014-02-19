@@ -1,9 +1,10 @@
-@mixin greg($cols,$gutter) {    
+@mixin greg($cols,$gutter) {
+    $breakpoint: 480 !default;
     $i: $cols; // Total # of cols
     $gutters: $cols - 1; // # gutters
-    $gutterWidth: $gutters * $gutter;
-    $gridWidth: 100% - $gutterWidth;
-    $colWidth: $gridWidth / $cols;
+    $gutterWidth: $gutters * $gutter; // Total width of gutters
+    $gridWidth: 100% - $gutterWidth; // Usable width of grid
+    $colWidth: $gridWidth / $cols; // Single col width
     $width: 100%;
     @while $cols > 0 {
         .col_#{$cols} {
@@ -13,6 +14,13 @@
             margin-left:$gutter;
         }
         .col_#{$cols}:first-child { margin-left:0; }
+        // Full width at 480px;
+        @media only screen and (max-width:480px) {
+            .col_#{$cols} {
+                width:100%;
+                margin-left:0;
+            }
+        }
         $cols: $cols - 1;
         $width: $width - ($colWidth + $gutter);
     }
