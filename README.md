@@ -1,6 +1,6 @@
 Greg (Great responsive easy grids)
 ====
-This is a boilerplate responsive grid mixin for Sass. We encourage you to extend it to suit you.
+This is an Über simple responsive and fluid grid mixin for Sass.
 
 Greg will take the number of columns you need and the gutter spacing you require to create a fluid grid based on those parameters.
 
