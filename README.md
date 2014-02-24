@@ -1,8 +1,10 @@
 Greg (Great responsive easy grids)
 ====
-This is a boilerplate responsive grid and we encourage you to extend it as necessary.
+This is a boilerplate responsive grid mixin for Sass. We encourage you to extend it to suit you.
 
 Greg will take the number of columns you need and the gutter spacing you require to create a fluid grid based on those parameters.
+
+The grid will default to full-width columns at 480px.
 
 For example you could make a 10 column grid with 2% width gutters using the following code;
 ```
